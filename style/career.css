@@ -1,0 +1,225 @@
+.career-info {
+  background-color: black;
+  padding: 40px;
+  color: white;
+  text-align: center;
+}
+
+.career-cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.career-cards div {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+  padding: 10px;
+  gap: 10px;
+  margin: 10px 0px;
+}
+.career-cards div img {
+  width: 40px;
+}
+.career-cards div h6 {
+  font-weight: 100;
+}
+
+.career-info h1,
+.career-info p {
+  padding: 15px 0px;
+}
+
+.career-form {
+  display: flex;
+  gap: 20px;
+  margin: 10px 40px;
+  border: 1px solid gray;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+}
+
+.right-inputs {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+form label {
+  margin-bottom: 10px;
+}
+.first-input-fild,
+.sconde-input-fild {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: end;
+  margin-bottom: 20px;
+}
+.first-input-fild div,
+.third-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.sconde-input-fild div {
+  width: 100%;
+}
+
+.number-input,
+.Job {
+  border: 1px solid gray;
+}
+.number-input select,
+.Job select,
+.Job input,
+.number-input input {
+  border: none;
+}
+form input {
+  padding: 10px 15px;
+  outline: none;
+  width: 100%;
+}
+.third-input textarea {
+  height: 200px;
+  resize: none;
+}
+
+.send-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  border: 1px solid rgb(82, 82, 82);
+  padding: 5px 30px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.send-btn button {
+  border: none;
+  background-color: transparent;
+}
+.number-input, .Job {
+    border: 1px solid gray;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.contect-our{
+  background-color: var(--black-Background);
+  color: var(--text-white);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.contect-our p {
+  margin-top: 13px;
+   font-size: 16px;
+   color: gray;
+}
+
+.emails,
+.number,
+.Office{
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+/* .emails,
+.number,
+.Office p {
+ 
+} */
+@media (max-width: 599px) {
+  .career-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .career-info {
+    padding: 10px;
+  }
+  .career-cards div {
+    width: 100%;
+  }
+  .career-form {
+    flex-direction: column;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin: 12px 6px;
+  }
+  .career-form img {
+    height: 300px;
+    object-fit: cover;
+  }
+  .first-input-fild,
+  .sconde-input-fild {
+    flex-wrap: wrap;
+  }
+  .right-inputs {
+    padding: 10px;
+  }
+  .form-heading {
+    text-align: center;
+    font-size: 5vw;
+    margin-bottom: 20px;
+  }
+ 
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .career-form {
+    flex-direction: column;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin: 12px 6px;
+  }
+    .career-form img {
+    height: 400px;
+    object-fit: cover;
+  }
+  .number-input, .Job {
+    border: 1px solid gray;
+    display: flex;
+}
+form label {
+    margin-bottom: 10px;
+    font-size: 2vw;
+}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) { 
+.career-form img{
+    width: 40%;
+} 
+  
+.career-form {
+    gap: 10px;
+    margin: 10px 10px;
+    
+} 
+.right-inputs {
+    padding: 10px;
+   
+}
+.right-inputs label{
+    font-size: 1.5vw;
+}
+ .first-input-fild, .sconde-input-fild {
+    justify-content: space-between;
+    gap: 5px;
+    
+}
+ 
+ }
