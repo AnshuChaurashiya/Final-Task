@@ -1,5 +1,6 @@
 .nav {
-  position: relative;
+  position: fixed;
+  background-color: white;
 }
 .about-page {
   width: 100%;
@@ -29,6 +30,7 @@
 .about-us {
   width: 100%;
   height: 350px;
+  margin-top: 5%;
   position: relative;
   overflow: hidden;
   margin-bottom: 50px;
@@ -159,7 +161,8 @@
 
 @media (max-width: 599px) {
   .about-us {
-    height: 100vh;
+    height:100vh;
+    margin-top: 15%;
   }
   .about-info,
   .about-second,
@@ -193,13 +196,12 @@
     margin-left: 17px;
   }
   .about-contenet p {
-    font-size: 15px;
-    line-height: 20px;
-    text-align: justify;
+    font-size: 20px;
+     text-align: justify;
     width: 100%;
-    padding: 5px;
-    /* margin-bottom: 10px; */
-  }
+    margin-bottom: 0px;
+    padding: 15px;
+   }
 
   .black-box {
     display: flex;
@@ -234,9 +236,11 @@
   }
   .business-img {
     width: 100%;
-    /* height: 400px; */
-  }
-
+   
+}
+.about-us{
+  margin-top: 15%;
+}
   .right-text .paragraph {
     width: 100%;
     text-align: justify;
@@ -289,6 +293,9 @@
      margin: 5px 10px;
     gap: 10px;
   
+}
+.about-us{
+  margin-top: 10%;
 }
 .right-text .paragraph {
     width: 100%;

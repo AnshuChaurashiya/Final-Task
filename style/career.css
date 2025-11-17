@@ -83,6 +83,7 @@ form label {
 .Job input,
 .number-input input {
   border: none;
+  background-color: transparent;
 }
 form input {
   padding: 10px 15px;
@@ -115,6 +116,7 @@ form input {
 }
 
 .contect-our{
+  margin-top: 15%;
   background-color: var(--black-Background);
   color: var(--text-white);
   padding: 30px;

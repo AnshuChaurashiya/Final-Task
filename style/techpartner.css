@@ -2,6 +2,7 @@
   width: 100%;
   position: relative;
   padding: 10px 40px;
+  overflow: hidden;
 }
 .top-heading div h1 {
   font-size: 40px;
