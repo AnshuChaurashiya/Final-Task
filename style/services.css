@@ -1,64 +1,222 @@
-.services{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 10px 40px;
-    margin-bottom: 40px;
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px 40px;
+  margin-bottom: 40px;
 }
 
 .services-card {
-    /* width: 400px; */
-    height: 400px;
-    position: relative;
+  /* width: 400px; */
+  height: 400px;
+  position: relative;
 }
 
 .services-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.services-name{
-    position: absolute;
-    top: 0;
-    padding: 15px;
-    color: var(--text-white);
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.577);
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
+.services-name {
+  position: absolute;
+  top: 0;
+  padding: 15px;
+  color: var(--text-white);
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.577);
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
 }
-.services-name h3{
-    padding: 10px 0px ;
+.services-name a {
+  padding: 10px 0px;
+  text-decoration: none;
+  color: var(--text-white);
+  font-size: 22px;
 }
-.services-name p{
-line-height: 20px;
+.services-name p {
+  line-height: 20px;
 }
 
+.servicesRIS {
+  text-align: center;
+  padding: 20px 40px;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.left-image {
+  width: 35%;
+  height: 550px;
+}
+.left-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+}
+.servicesRIS-content {
+  width: 60%;
+  padding: 0px 20px;
+  text-align: left;
+}
+
+
+.servicesRIS-content p,
+.Inclusions-content p {
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.servicesRIS-content .top-heading ,
+.Inclusions-content .top-heading {
+    padding: 20px 0px;
+}
+
+.servicesRIS-content .top-heading span,
+.Inclusions-content .top-heading span {
+  background-color: var(--btn);
+}
+.servicesRIS-content a {
+  color: var(--text-black);
+  text-decoration: none;
+  padding: 10px 45px;
+  border: 1px solid var(--text-black);
+}
+
+.services-Inclusions {
+  margin: 20px 40px;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  border: 1px solid rgb(173, 172, 172);
+  background-color: #f9f9f9;
+}
+.Inclusions-content {
+  width: 65%;
+  padding: 0px 20px;
+  text-align: left;
+}
+.services-Inclusions .top-heading div {
+  background-color: #f9f9f9;
+}
+
+.services-Inclusions img {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+}
 
 @media (max-width: 599px) {
   .services {
     grid-template-columns: repeat(1, 1fr);
     padding: 10px 10px;
-}
-.services-card {
+  }
+  .services-card {
     width: 100%;
-}
-.services-name {
+  }
+  .services-name {
     padding: 7px;
-   
-}
-.services-name p{
- font-size: 16px;
+  }
+  .services-name p {
+    font-size: 16px;
+  }
+
+  /* servicesRIS */
+  .servicesRIS,
+  .services-Inclusions {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .left-image {
+    width: 100%;
+    height: 450px;
+  }
+  .servicesRIS-content,
+  .Inclusions-content {
+    width: 100%;
+    padding: 0px 10px;
+    text-align: justify;
+  }
+  .services-Inclusions {
+    margin: 50px 10px;
+  }
+  .services-Inclusions img {
+    width: 100%;
+  }
+  .servicesRIS-content .top-heading,
+  .Inclusions-content .top-heading {
+    overflow: hidden;
+  }
+ 
 }
 
-}
-
-@media (min-width: 600px) and (max-width: 767px){ 
-     .services {
+@media (min-width: 600px) and (max-width: 767px) {
+  .services {
     grid-template-columns: repeat(3, 1fr);
     padding: 10px 20px;
+  }
+
+
+
+  /* servicesRIS */
+  .servicesRIS,
+  .services-Inclusions {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .left-image,
+  .services-Inclusions img
+ {
+    width: 100%;
+    height: auto;
+  }
+  .servicesRIS-content,
+  .Inclusions-content {
+    width: 100%;
+    padding: 0px 10px;
+    text-align: justify;
+  }
+  .services-Inclusions {
+    margin: 50px 10px;
+  }
+   
+  .servicesRIS-content .top-heading,
+  .Inclusions-content .top-heading {
+    overflow: hidden;
+  }
+  .servicesRIS-content p, .Inclusions-content p {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
- }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .servicesRIS {
+    text-align: justify;
+    padding: 10px 10px;
+    gap: 10px;
+}
+.servicesRIS-content {
+    width: 60%;
+    padding: 0px 2px;
+}
+.servicesRIS-content p, .Inclusions-content p {
+    font-size: 15px;
+    line-height: 24px;
+    text-align: justify;
+}
+.left-image {
+    width: 40%;
+    height: auto;
+}
+}
+
